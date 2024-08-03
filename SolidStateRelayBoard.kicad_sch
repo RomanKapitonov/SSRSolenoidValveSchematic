@@ -1596,7 +1596,7 @@
 				)
 			)
 		)
-		(symbol "Relay_SolidState:AQH3223A"
+		(symbol "Relay_SolidState:AQH3223"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1609,7 +1609,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "AQH3223A"
+			(property "Value" "AQH3223"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -1618,8 +1618,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-				(at -7.62 -5.08 0)
+			(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+				(at -17.78 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1639,7 +1639,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
+			(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1657,7 +1657,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SSO*6.4x9.78mm*P2.54mm*"
+			(property "ki_fp_filters" "DIP*N7*W7.62mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1666,7 +1666,33 @@
 					(hide yes)
 				)
 			)
-			(symbol "AQH3223A_1_1"
+			(symbol "AQH3223_0_1"
+				(polyline
+					(pts
+						(xy 3.048 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -0.635) (xy 3.048 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AQH3223_1_1"
 				(rectangle
 					(start -7.62 3.81)
 					(end 5.08 -6.35)
@@ -1860,30 +1886,6 @@
 				(polyline
 					(pts
 						(xy 2.286 -0.635) (xy 2.286 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.048 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.048 -0.635) (xy 3.048 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -2121,7 +2123,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 7.62 -5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -2139,7 +2141,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -2597,6 +2599,18 @@
 		)
 	)
 	(junction
+		(at 251.46 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0068f284-408d-4087-8abd-64487ad3f376")
+	)
+	(junction
+		(at 60.96 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "010639d4-b3eb-4cf2-aac7-e58cb2f8ae7a")
+	)
+	(junction
 		(at 240.03 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2627,12 +2641,6 @@
 		(uuid "12f6d450-fdcd-49e7-aa69-428733fb6717")
 	)
 	(junction
-		(at 66.04 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "13d2e203-d7ac-4d2b-8911-189dd4300a45")
-	)
-	(junction
 		(at 240.03 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2643,6 +2651,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "149eea50-57a5-4122-b01b-739f048294ff")
+	)
+	(junction
+		(at 101.6 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15882cb9-b267-4e55-ada2-63d712b481d4")
+	)
+	(junction
+		(at 251.46 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d8a31e8-4d86-4ff8-b0bc-a819b323cfdc")
 	)
 	(junction
 		(at 58.42 52.07)
@@ -2667,6 +2687,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32a6e734-1a4b-480a-b2cb-8538a38d6160")
+	)
+	(junction
+		(at 101.6 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32f17a10-dd81-473b-9ae0-d06c44f5a528")
 	)
 	(junction
 		(at 240.03 68.58)
@@ -2771,10 +2797,34 @@
 		(uuid "7af6aa41-77a0-45db-b7dd-a369f5b61f79")
 	)
 	(junction
+		(at 251.46 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b35a293-e3e9-4ae0-8e2b-0335f4fa6a33")
+	)
+	(junction
+		(at 101.6 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e7b415c-d725-4dbe-b1d5-67a7b84e7ea1")
+	)
+	(junction
 		(at 234.95 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96b6a51e-85da-46ea-b17f-af144341709f")
+	)
+	(junction
+		(at 101.6 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "975b1d1d-e449-44c6-bda3-d72fc27bc5f1")
+	)
+	(junction
+		(at 101.6 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99618771-7ca6-48d6-9c3b-4f98af69c34a")
 	)
 	(junction
 		(at 234.95 27.94)
@@ -2793,6 +2843,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a029672f-eba8-4fa9-9257-b199f7870f7e")
+	)
+	(junction
+		(at 251.46 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0dbc483-7d66-4195-9bbf-a15bf539915c")
 	)
 	(junction
 		(at 87.63 77.47)
@@ -2835,6 +2891,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daad4d3c-c58b-4230-907a-a2bb90aa436b")
+	)
+	(junction
+		(at 251.46 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4334cf6-c5a2-40b3-a81a-a4c5b02c7992")
 	)
 	(junction
 		(at 234.95 60.96)
@@ -2930,7 +2992,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 85.09) (xy 109.22 85.09)
+			(xy 91.44 85.09) (xy 101.6 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2950,7 +3012,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 101.6) (xy 111.76 101.6)
+			(xy 91.44 101.6) (xy 101.6 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3017,6 +3079,16 @@
 			(type default)
 		)
 		(uuid "0d41f629-b5fa-4cbf-bcaa-0dae7d1f6f48")
+	)
+	(wire
+		(pts
+			(xy 251.46 35.56) (xy 251.46 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e47a270-d478-4b3c-b7d3-db3d0046186d")
 	)
 	(wire
 		(pts
@@ -3090,7 +3162,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 68.58) (xy 240.03 68.58)
+			(xy 256.54 68.58) (xy 251.46 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3200,13 +3272,23 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 68.58) (xy 106.68 68.58)
+			(xy 91.44 68.58) (xy 101.6 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c266321-46c1-47c7-8a36-c0500c3fdd74")
+	)
+	(wire
+		(pts
+			(xy 251.46 52.07) (xy 251.46 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8ea5d8-199e-4bd8-a335-0a240f8337cc")
 	)
 	(wire
 		(pts
@@ -3260,6 +3342,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 101.6) (xy 240.03 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "303e7f12-e14e-4906-a2d7-8f1979f97e40")
+	)
+	(wire
+		(pts
 			(xy 214.63 44.45) (xy 190.5 44.45)
 		)
 		(stroke
@@ -3310,7 +3402,27 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 157.48) (xy 50.8 161.29)
+			(xy 101.6 85.09) (xy 101.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a278834-eef7-4f96-b948-00b2e1376501")
+	)
+	(wire
+		(pts
+			(xy 251.46 52.07) (xy 240.03 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4d6dbb-d2bf-432f-884a-201332528b01")
+	)
+	(wire
+		(pts
+			(xy 60.96 157.48) (xy 60.96 162.56)
 		)
 		(stroke
 			(width 0)
@@ -3350,6 +3462,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 68.58) (xy 106.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4054ec2e-bd56-40bb-95a4-eebc819f8975")
+	)
+	(wire
+		(pts
 			(xy 52.07 44.45) (xy 67.31 44.45)
 		)
 		(stroke
@@ -3357,6 +3479,16 @@
 			(type default)
 		)
 		(uuid "40ec18d0-0dad-4ac4-ab0f-5a19dd65b164")
+	)
+	(wire
+		(pts
+			(xy 101.6 52.07) (xy 101.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40fdd91e-4d36-4333-a520-5f3cd9fcf76b")
 	)
 	(wire
 		(pts
@@ -3440,7 +3572,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 101.6) (xy 240.03 101.6)
+			(xy 261.62 101.6) (xy 251.46 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3580,6 +3712,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 135.89) (xy 170.18 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "601a6c05-a1c1-41a5-98e4-dcedc4b6e28c")
+	)
+	(wire
+		(pts
 			(xy 114.3 140.97) (xy 124.46 140.97)
 		)
 		(stroke
@@ -3587,16 +3729,6 @@
 			(type default)
 		)
 		(uuid "60489df6-9c3a-4499-94ca-9ba9a335dc7c")
-	)
-	(wire
-		(pts
-			(xy 66.04 147.32) (xy 62.23 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "619a8eaa-3607-45f6-bca2-45b3e4d23d9e")
 	)
 	(wire
 		(pts
@@ -3660,6 +3792,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 147.32) (xy 31.75 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af1a198-3e63-4349-90d7-0d3fda2c3f34")
+	)
+	(wire
+		(pts
 			(xy 52.07 60.96) (xy 67.31 60.96)
 		)
 		(stroke
@@ -3667,6 +3809,16 @@
 			(type default)
 		)
 		(uuid "6c220243-40d0-4b20-8b1d-d75457f32fae")
+	)
+	(wire
+		(pts
+			(xy 52.07 147.32) (xy 60.96 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d980c6f-6372-4b06-96c1-761adbed599c")
 	)
 	(wire
 		(pts
@@ -3697,6 +3849,16 @@
 			(type default)
 		)
 		(uuid "71b52ba7-f05e-43b2-a2ae-90cf51326643")
+	)
+	(wire
+		(pts
+			(xy 101.6 52.07) (xy 104.14 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7211c421-3552-4cfb-992d-fed50194c75e")
 	)
 	(wire
 		(pts
@@ -3760,6 +3922,46 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 135.89) (xy 170.18 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828cd883-8b4b-4e05-8424-ab5422966113")
+	)
+	(wire
+		(pts
+			(xy 101.6 85.09) (xy 109.22 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853d1373-6b23-4ec6-a6ef-7ed8b80e8041")
+	)
+	(wire
+		(pts
+			(xy 60.96 147.32) (xy 67.31 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86f3fbe5-1a39-458f-8715-b8bddb03e96a")
+	)
+	(wire
+		(pts
+			(xy 101.6 35.56) (xy 101.6 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8909c098-c7d1-4029-8798-11dde7c5fa36")
+	)
+	(wire
+		(pts
 			(xy 58.42 101.6) (xy 58.42 104.14)
 		)
 		(stroke
@@ -3767,6 +3969,26 @@
 			(type default)
 		)
 		(uuid "8b0b366a-0387-46ad-8a62-a26827bb25a7")
+	)
+	(wire
+		(pts
+			(xy 251.46 85.09) (xy 240.03 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ccf0f8f-4b6e-4248-98ca-8885e85e560c")
+	)
+	(wire
+		(pts
+			(xy 251.46 68.58) (xy 251.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d539915-4c83-48f5-bb8f-50c8b2109236")
 	)
 	(wire
 		(pts
@@ -3830,7 +4052,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 157.48) (xy 22.86 157.48)
+			(xy 31.75 157.48) (xy 22.86 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3847,16 +4069,6 @@
 			(type default)
 		)
 		(uuid "92956428-b001-4103-8554-f3c9451b23b5")
-	)
-	(wire
-		(pts
-			(xy 57.15 147.32) (xy 46.99 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95150518-f5da-4353-8a3c-cfc2cac85f7e")
 	)
 	(wire
 		(pts
@@ -3877,6 +4089,16 @@
 			(type default)
 		)
 		(uuid "98305d6b-d294-4d70-b08a-d3e8abc02287")
+	)
+	(wire
+		(pts
+			(xy 251.46 68.58) (xy 240.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98c2bc01-6a06-43d0-bd39-6750e136585a")
 	)
 	(wire
 		(pts
@@ -3950,6 +4172,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 133.35) (xy 173.99 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a12d8575-6252-4adf-874c-140364a8cfa4")
+	)
+	(wire
+		(pts
 			(xy 259.08 45.72) (xy 259.08 85.09)
 		)
 		(stroke
@@ -4007,16 +4239,6 @@
 			(type default)
 		)
 		(uuid "ad10e993-36e2-49b4-a9bf-6dc9706d34df")
-	)
-	(wire
-		(pts
-			(xy 66.04 147.32) (xy 76.2 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ade1caef-52ff-4bb8-94ad-a6b8d8aadcb3")
 	)
 	(wire
 		(pts
@@ -4170,7 +4392,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 52.07) (xy 104.14 52.07)
+			(xy 91.44 52.07) (xy 101.6 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4260,6 +4482,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 85.09) (xy 251.46 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd2e3a8-65f5-48fe-ab1c-0aeb613d676f")
+	)
+	(wire
+		(pts
 			(xy 87.63 44.45) (xy 87.63 60.96)
 		)
 		(stroke
@@ -4340,7 +4572,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 85.09) (xy 240.03 85.09)
+			(xy 259.08 85.09) (xy 251.46 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4380,7 +4612,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 157.48) (xy 50.8 157.48)
+			(xy 52.07 157.48) (xy 60.96 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4407,6 +4639,16 @@
 			(type default)
 		)
 		(uuid "dc41a85c-ce68-48a6-80c5-cda5f1b05087")
+	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 111.76 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcf433bf-bf84-4077-9348-1795113023be")
 	)
 	(wire
 		(pts
@@ -4437,6 +4679,16 @@
 			(type default)
 		)
 		(uuid "e0f606bb-198b-4ed6-b71e-33c3592078b9")
+	)
+	(wire
+		(pts
+			(xy 101.6 68.58) (xy 101.6 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e16b5e69-2128-47ae-9456-5a1f1cff0418")
 	)
 	(wire
 		(pts
@@ -4540,7 +4792,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 137.16) (xy 66.04 147.32)
+			(xy 60.96 137.16) (xy 60.96 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4610,7 +4862,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 52.07) (xy 240.03 52.07)
+			(xy 254 52.07) (xy 251.46 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4660,13 +4912,23 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 147.32) (xy 26.67 147.32)
+			(xy 19.05 147.32) (xy 22.86 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fc34953b-eeb9-4de7-a386-8b685ef93283")
+	)
+	(wire
+		(pts
+			(xy 72.39 147.32) (xy 78.74 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfabd02-f393-48ac-a300-f33e6c597c57")
 	)
 	(wire
 		(pts
@@ -4715,6 +4977,18 @@
 		(uuid 79a5cabd-7e3e-47b7-8520-27cf25cbd10f)
 	)
 	(rectangle
+		(start 148.59 119.38)
+		(end 187.96 156.21)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d2d2a337-625f-474e-ac0b-b94be7b29b1d)
+	)
+	(rectangle
 		(start 148.59 12.7)
 		(end 284.48 119.38)
 		(stroke
@@ -4735,6 +5009,16 @@
 			)
 		)
 		(uuid "3e77c4ca-d217-40c0-90e1-d428d98f8fc6")
+	)
+	(text "24 VAC Input from transformer"
+		(exclude_from_sim no)
+		(at 164.846 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5820f014-834e-4225-bfeb-61b47ae2aab3")
 	)
 	(text "AQH3223 drops approximately 1.2V on an internal LED hence a\nresistor of 100 Ohm is chosen to supply 20mA of current for\nLED operation.\n\nA 300V varistor is used to protect the solid state relay from\nvoltage spikes from an inductive (solenoid) load."
 		(exclude_from_sim no)
@@ -4818,6 +5102,17 @@
 		)
 		(uuid "10782c98-7817-428b-8a78-85c0d80973b0")
 	)
+	(label "24VACIN"
+		(at 167.64 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10c91ee8-b044-4574-8405-349de7767d6e")
+	)
 	(label "CTRL9"
 		(at 166.37 35.56 0)
 		(fields_autoplaced yes)
@@ -4874,7 +5169,7 @@
 		(uuid "4a037a54-515d-40e1-9b0c-acf0fe829ead")
 	)
 	(label "24VAC"
-		(at 68.58 147.32 0)
+		(at 73.66 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4882,7 +5177,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6128a32d-2e09-4323-9ad6-cf820ce4e66f")
+		(uuid "53b4ae72-6cd4-4a0e-8e8d-b6252caed1d7")
 	)
 	(label "CTRL2"
 		(at 114.3 135.89 0)
@@ -4972,6 +5267,17 @@
 		)
 		(uuid "cb5a38b8-392a-4dcc-abc9-f220bcfcab81")
 	)
+	(label "24VACIN"
+		(at 52.07 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2629656-f776-47ca-99ea-7d5d3dacd37c")
+	)
 	(label "CTRL9"
 		(at 114.3 153.67 0)
 		(fields_autoplaced yes)
@@ -5059,7 +5365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "018acbf8-1e03-4e76-82fd-f3ee9250ad1b")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 124.46 177.8 0)
 			(effects
 				(font
@@ -5109,7 +5415,7 @@
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5141,7 +5447,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 44.45 0)
 			(effects
 				(font
@@ -5209,7 +5515,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 187.96 77.47 0)
 			(effects
 				(font
@@ -5253,7 +5559,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 50.8 161.29 0)
+		(at 60.96 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5261,8 +5567,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bba03bf-bb50-4360-9aed-5313ece2bad3")
-		(property "Reference" "#PWR05"
-			(at 50.8 167.64 0)
+		(property "Reference" "#PWR04"
+			(at 60.96 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5577,7 @@
 			)
 		)
 		(property "Value" "GNDA24"
-			(at 50.8 166.37 0)
+			(at 60.96 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5279,7 +5585,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 161.29 0)
+			(at 60.96 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5288,7 +5594,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 161.29 0)
+			(at 60.96 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5297,7 +5603,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 50.8 161.29 0)
+			(at 60.96 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,7 +5617,7 @@
 		(instances
 			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5345,7 +5651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 238.252 64.77 90)
 			(effects
 				(font
@@ -5433,6 +5739,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 25.4 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fd3edca-fa35-41f6-8984-dd84e894b9d4")
+		(property "Reference" "F1"
+			(at 25.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "375mA"
+			(at 25.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Eaton_1A5601-01_Inline_P20.80x6.76mm_D1.70mm_Horizontal"
+			(at 25.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 25.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d341a46-dcae-4c70-bc9b-1f6327762c53")
+		)
+		(pin "1"
+			(uuid "163de667-06af-4172-b169-9056b143dea1")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 187.96 27.94 90)
 		(unit 1)
@@ -5458,7 +5832,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 187.96 27.94 0)
 			(effects
 				(font
@@ -5526,7 +5900,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -5596,7 +5970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 238.252 31.75 90)
 			(effects
 				(font
@@ -5684,92 +6058,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 224.79 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22302bd1-8fed-43f1-8ade-ff3ae5719fe2")
-		(property "Reference" "U8"
-			(at 223.52 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 223.52 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 217.17 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 222.25 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 224.79 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5a8e4cf7-2920-4e7c-b8cd-670ba5cafa4a")
-		)
-		(pin "1"
-			(uuid "224274a5-b869-4d78-b4fc-a8ff09d05214")
-		)
-		(pin "3"
-			(uuid "c5a3890f-ac8e-43a9-a887-cd63937c2a4c")
-		)
-		(pin "4"
-			(uuid "0652028b-b1f9-49ae-818b-ee7d3e5b5286")
-		)
-		(pin "6"
-			(uuid "849ab987-43a1-4393-9e63-64044647386a")
-		)
-		(pin "8"
-			(uuid "f786a1dd-0939-4cda-9dc7-eb56fb2f3005")
-		)
-		(pin "5"
-			(uuid "52967637-9805-48a9-912b-0bbd84882737")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Varistor")
 		(at 91.44 64.77 0)
 		(unit 1)
@@ -5797,7 +6085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 89.662 64.77 90)
 			(effects
 				(font
@@ -5894,7 +6182,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31e3ebf2-91c4-4e02-b6c9-a04208f0ec45")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 58.42 110.49 0)
 			(effects
 				(font
@@ -5944,7 +6232,101 @@
 		(instances
 			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR01")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x10")
+		(at 123.19 40.64 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "348da3e3-07c0-44ad-87bf-cfe568ce717e")
+		(property "Reference" "J3"
+			(at 122.174 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolenoidValveOutput1_5"
+			(at 114.046 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x10_P3.50mm_Horizontal"
+			(at 123.19 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 123.19 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b6984808-6992-4090-ad71-f934d199e00e")
+		)
+		(pin "4"
+			(uuid "e8bb3503-7551-42af-8f4d-0b1a8d453b01")
+		)
+		(pin "9"
+			(uuid "398f104d-2357-4ec8-b802-3f60c49d80a4")
+		)
+		(pin "10"
+			(uuid "f8211f0a-3884-491b-b7e6-16c093400988")
+		)
+		(pin "1"
+			(uuid "c3b53bca-b6d5-422e-a3c1-c1764f6c32cd")
+		)
+		(pin "2"
+			(uuid "1dbf510d-45c7-43f8-aa05-5d5547883721")
+		)
+		(pin "3"
+			(uuid "62c87ecb-6873-48d3-9038-26104be8c9ae")
+		)
+		(pin "6"
+			(uuid "a7899b25-ee24-40de-8d8a-a37b48ccd73e")
+		)
+		(pin "7"
+			(uuid "612a59ba-c641-4bd3-8cc0-4fe4923ff2a8")
+		)
+		(pin "8"
+			(uuid "05649bf8-64c1-4a8c-a0bd-59d63e26b340")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5978,7 +6360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 238.252 97.79 90)
 			(effects
 				(font
@@ -6066,8 +6448,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 224.79 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49cc3a07-97d6-4127-a4e9-fa9cf012efa6")
+		(property "Reference" "U9"
+			(at 223.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 223.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 222.25 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "30f75e89-754b-469f-b4af-4e8c66cfbe48")
+		)
+		(pin "8"
+			(uuid "53aa9804-077c-4ca9-8909-92c5309b1b84")
+		)
+		(pin "2"
+			(uuid "1d9ae913-3306-46fc-a5a6-d47628aad6eb")
+		)
+		(pin "3"
+			(uuid "10127543-d23b-4122-b658-6ab8e95210a7")
+		)
+		(pin "6"
+			(uuid "911d01c5-f882-4ed4-8af9-01998f597dc4")
+		)
+		(pin "4"
+			(uuid "8586a4de-20a8-4d45-8aad-bc61578a0df6")
+		)
+		(pin "1"
+			(uuid "d3595859-0a3c-44a5-a743-4bbbfb463f03")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 66.04 137.16 0)
+		(at 60.96 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6076,7 +6544,7 @@
 		(fields_autoplaced yes)
 		(uuid "52801e9f-3116-4969-9893-98030fbb6e2b")
 		(property "Reference" "#FLG01"
-			(at 66.04 135.255 0)
+			(at 60.96 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6085,7 +6553,7 @@
 			)
 		)
 		(property "Value" "24_VAC"
-			(at 66.04 132.08 0)
+			(at 60.96 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6093,7 +6561,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 137.16 0)
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6102,7 +6570,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 137.16 0)
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6111,7 +6579,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 66.04 137.16 0)
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,7 +6609,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "567bca3e-7c07-43eb-91de-cbb0bcfd048c")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 261.62 110.49 0)
 			(effects
 				(font
@@ -6191,179 +6659,7 @@
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 77.47 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c7c70ee-4cea-4c3e-a15b-0c0f1b8b8fc5")
-		(property "Reference" "U3"
-			(at 76.2 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 76.2 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 69.85 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 74.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 77.47 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b1eaa4e4-ca9a-4c63-96f1-7f24273ecc59")
-		)
-		(pin "1"
-			(uuid "0fd3777b-45d9-4fee-aa80-866b7ebc3522")
-		)
-		(pin "3"
-			(uuid "b461cbd6-2130-4320-89ba-aa1a0101d466")
-		)
-		(pin "4"
-			(uuid "5ea3ab12-c577-40db-83f5-fc705c7c4b58")
-		)
-		(pin "6"
-			(uuid "fabd8b08-1440-4246-b725-c437832abe2e")
-		)
-		(pin "8"
-			(uuid "0f21acf2-decf-4d96-a580-97e160920639")
-		)
-		(pin "5"
-			(uuid "e5c693a1-5626-4868-85e7-4897240c5d4e")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 77.47 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cb8a52e-828e-439c-b4a2-87b5fd0381fd")
-		(property "Reference" "U1"
-			(at 76.2 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 76.2 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 69.85 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 74.93 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 77.47 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d1de9d93-81b8-4d62-8701-79362b78e99d")
-		)
-		(pin "1"
-			(uuid "533496db-85d8-449b-a71b-6b106f316979")
-		)
-		(pin "3"
-			(uuid "051d3040-87f7-4d8a-8b8e-fb24299ae42c")
-		)
-		(pin "4"
-			(uuid "5e3a5c66-4b71-4b43-b5f6-d85d5803e783")
-		)
-		(pin "6"
-			(uuid "5abffe49-0e57-471f-abdd-d406ac822a65")
-		)
-		(pin "8"
-			(uuid "3e3d01b4-fba9-4d72-b2ed-ef61badf3407")
-		)
-		(pin "5"
-			(uuid "293caa2e-e843-48c4-8747-9adbe256f588")
-		)
-		(instances
-			(project ""
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U1")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6395,7 +6691,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 27.94 0)
 			(effects
 				(font
@@ -6438,92 +6734,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 77.47 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68203f74-b7fb-4b67-8196-88e49e32c0c8")
-		(property "Reference" "U4"
-			(at 76.2 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 76.2 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 69.85 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 74.93 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 77.47 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a306c9b2-47a0-4395-bb34-8dfb7838eb3d")
-		)
-		(pin "1"
-			(uuid "023bec53-c7c1-4170-ab04-6991afd06802")
-		)
-		(pin "3"
-			(uuid "411fd55d-a7b6-4891-83bc-b8dd503f9138")
-		)
-		(pin "4"
-			(uuid "8447341c-bd42-4a64-804f-808d4bdb0f66")
-		)
-		(pin "6"
-			(uuid "b8c6e793-9983-42eb-9cfb-6e900ea9bb51")
-		)
-		(pin "8"
-			(uuid "21bfa30a-7f5d-4b83-95e4-4799f4779b64")
-		)
-		(pin "5"
-			(uuid "d7f2e256-1add-4e7e-ae76-bf141324c349")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 22.86 161.29 0)
 		(unit 1)
@@ -6533,7 +6743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "727a599d-767b-434d-8608-e0f1b4d16832")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 22.86 167.64 0)
 			(effects
 				(font
@@ -6583,100 +6793,7 @@
 		(instances
 			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x10")
-		(at 123.19 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "772c9bf9-915e-43ea-921a-727e541d64ae")
-		(property "Reference" "J4"
-			(at 122.174 21.336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolenoidValveOutput1_5"
-			(at 114.046 24.384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 123.19 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "2623281c-6f10-4dff-a5d4-b82ca83b2a36")
-		)
-		(pin "4"
-			(uuid "854bbe31-f7fd-401c-abfa-2ad091fe1c79")
-		)
-		(pin "9"
-			(uuid "44be91fe-8690-47e2-adb1-175da8545048")
-		)
-		(pin "10"
-			(uuid "f4045380-c201-4c20-aa9a-50397e6d6081")
-		)
-		(pin "1"
-			(uuid "6f10e2a5-125f-4551-9c15-35a7a11655d4")
-		)
-		(pin "2"
-			(uuid "2138e724-5126-428b-9d49-775fa45913cc")
-		)
-		(pin "3"
-			(uuid "175b192a-adfb-41dd-874b-6ed6afcd1230")
-		)
-		(pin "6"
-			(uuid "82065c4e-23a8-4bc0-ae72-528c437ab025")
-		)
-		(pin "7"
-			(uuid "be8182b1-7126-4c6c-ae4b-1649964d0483")
-		)
-		(pin "8"
-			(uuid "417c3e9e-f977-43ed-aed9-b9b1c78c962f")
-		)
-		(instances
-			(project ""
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "J4")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6708,7 +6825,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 			(at 109.22 166.37 0)
 			(effects
 				(font
@@ -6751,6 +6868,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 224.79 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a2dd7ee-e9bf-484f-8c65-4a4608a1644b")
+		(property "Reference" "U8"
+			(at 223.52 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 223.52 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 207.01 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 222.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 224.79 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "60f15e0b-257e-4af0-a449-4a1d1a0581be")
+		)
+		(pin "8"
+			(uuid "fd9a2186-60b1-494b-87ac-c86d0a6422a5")
+		)
+		(pin "2"
+			(uuid "bb086597-9184-4996-a306-248509ddae31")
+		)
+		(pin "3"
+			(uuid "8fcde1a6-9ca8-4821-b21d-d35b367d8db7")
+		)
+		(pin "6"
+			(uuid "09827250-9dac-4cdb-8a48-10f7ca38000e")
+		)
+		(pin "4"
+			(uuid "905ca3d5-0dcb-4905-a9d3-5d25991a08aa")
+		)
+		(pin "1"
+			(uuid "ce11119e-0e86-487f-8002-b9edc075aa67")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Varistor")
 		(at 240.03 81.28 0)
 		(unit 1)
@@ -6778,7 +6981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 238.252 81.28 90)
 			(effects
 				(font
@@ -6891,7 +7094,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 77.47 0)
 			(effects
 				(font
@@ -6934,6 +7137,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 77.47 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d9a2433-792c-4763-9149-789be19a2e42")
+		(property "Reference" "U3"
+			(at 76.2 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 76.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 59.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 74.93 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 77.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "fc0dda19-26b8-42ad-ba54-825828d67990")
+		)
+		(pin "8"
+			(uuid "971f3c0e-2c9f-405a-83b2-cfee5f82e0f0")
+		)
+		(pin "2"
+			(uuid "aae6b99a-6fc7-43fd-980e-a1dfd61087a9")
+		)
+		(pin "3"
+			(uuid "ddb73fca-f1c7-4e36-b726-b3a5ddeaeae6")
+		)
+		(pin "6"
+			(uuid "bacf27d0-9c56-44df-88e8-dd4c0df38531")
+		)
+		(pin "4"
+			(uuid "ee2a134e-644f-4342-98de-32aefc438a5f")
+		)
+		(pin "1"
+			(uuid "6c6caead-ff47-47c2-9d6a-22cbcfa3a735")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 49.53 93.98 90)
 		(unit 1)
@@ -6959,7 +7248,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 93.98 0)
 			(effects
 				(font
@@ -7002,33 +7291,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 224.79 46.99 0)
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 77.47 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8a46fe22-acb8-4f23-8f7d-1a12777e5599")
-		(property "Reference" "U7"
-			(at 223.52 38.1 0)
+		(uuid "86296578-c68c-46af-94c2-c5d6c217a734")
+		(property "Reference" "U4"
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AQH3223A"
-			(at 223.52 40.64 0)
+		(property "Value" "AQH3223"
+			(at 76.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 217.17 52.07 0)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7039,7 +7328,7 @@
 			)
 		)
 		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 222.25 46.99 0)
+			(at 74.93 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7048,8 +7337,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 224.79 46.99 0)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 77.47 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7057,31 +7346,31 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "cf368130-fa22-4013-b5c9-8d4def952470")
-		)
-		(pin "1"
-			(uuid "f415a7c4-1abe-4aa2-86a6-6593353d12ae")
-		)
-		(pin "3"
-			(uuid "442d2dde-1647-4f75-86c6-05b1d39dbdb1")
-		)
-		(pin "4"
-			(uuid "014d34ca-2004-4d07-bfa0-7aed18b8e349")
-		)
-		(pin "6"
-			(uuid "f27afc65-d42a-4455-9d91-caa505e9507a")
+		(pin "5"
+			(uuid "65f9cfbe-2e24-447e-b22e-db577c94d3e5")
 		)
 		(pin "8"
-			(uuid "5f46352d-f9f8-4abd-8e0a-f5eb34c5f8c1")
+			(uuid "73475cb6-3b6a-4356-9cf9-a21069db53a6")
 		)
-		(pin "5"
-			(uuid "dc8556f4-683a-404a-8ac1-f29b2017ddcb")
+		(pin "2"
+			(uuid "7999cfd1-3e38-42c4-98d1-6e5ac65329ab")
+		)
+		(pin "3"
+			(uuid "b6ae50f2-1865-4508-bc36-86cd5a9f02ea")
+		)
+		(pin "6"
+			(uuid "33f1224c-bed6-4241-8dd0-fa978dfddccf")
+		)
+		(pin "4"
+			(uuid "0f3c72db-7000-4e6f-a798-bf9a1c105b3b")
+		)
+		(pin "1"
+			(uuid "c64b5e15-18a1-47b8-80d8-569b4a890e35")
 		)
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U7")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7113,7 +7402,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 187.96 93.98 0)
 			(effects
 				(font
@@ -7156,33 +7445,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 224.79 80.01 0)
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 77.47 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "904262ae-d7f6-4aa3-808c-23930c0bbffe")
-		(property "Reference" "U9"
-			(at 223.52 71.12 0)
+		(uuid "911f76b3-f534-49d4-8ace-dc079190ba9d")
+		(property "Reference" "U1"
+			(at 76.2 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AQH3223A"
-			(at 223.52 73.66 0)
+		(property "Value" "AQH3223"
+			(at 76.2 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 217.17 85.09 0)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 59.69 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7193,7 +7482,7 @@
 			)
 		)
 		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 222.25 80.01 0)
+			(at 74.93 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7202,126 +7491,40 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 224.79 80.01 0)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 77.47 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "47d917c6-9fd7-43d0-99fe-8c7f8e4983cd")
-		)
-		(pin "1"
-			(uuid "d7456266-9864-4a6f-8b1d-fc60461c3f78")
-		)
-		(pin "3"
-			(uuid "22dec94d-6edc-4d3c-8789-7fcd9f135cca")
-		)
-		(pin "4"
-			(uuid "ee523922-c084-4f47-899a-87fcb33118ee")
-		)
-		(pin "6"
-			(uuid "0530d78c-e694-4eb5-921b-0ee5d75a3b27")
-		)
-		(pin "8"
-			(uuid "118688c7-f1a2-426e-bccc-f78c162c3464")
 		)
 		(pin "5"
-			(uuid "b564a8a2-41ec-4a37-95e7-4b792a39b933")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 224.79 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "94cbdcda-14d2-4304-9a85-0589782566bc")
-		(property "Reference" "U6"
-			(at 223.52 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 223.52 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 217.17 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 222.25 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 224.79 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6485fe1a-0d8c-4617-baf8-bc60a76d05cc")
-		)
-		(pin "1"
-			(uuid "e5d9d659-0f4a-4829-903e-a5d4ea9db2dc")
-		)
-		(pin "3"
-			(uuid "981e66da-e905-4c35-ac6f-f3819690ef52")
-		)
-		(pin "4"
-			(uuid "ea006027-4ed0-409b-a449-10f15745dbc5")
-		)
-		(pin "6"
-			(uuid "0e0e99fc-6c64-4f30-9ab0-5fd6b880a335")
+			(uuid "48355aa9-18df-47f4-a952-17c3bcc3541c")
 		)
 		(pin "8"
-			(uuid "89daa51d-761a-4d75-9088-9e76b884942d")
+			(uuid "62a7bcab-925a-4d20-bea1-d1efb0daca46")
 		)
-		(pin "5"
-			(uuid "c34904e5-7345-4788-9ee7-804fdf32afa1")
+		(pin "2"
+			(uuid "dd03cfb2-f9ec-42ef-b69c-f024286c5e50")
+		)
+		(pin "3"
+			(uuid "a1ed1e6c-62b3-4d74-a33f-9cfab9f9654e")
+		)
+		(pin "6"
+			(uuid "5495b574-f237-49da-b022-7de1452ece12")
+		)
+		(pin "4"
+			(uuid "86ff3eef-8eda-4744-be32-2835bdca2e3a")
+		)
+		(pin "1"
+			(uuid "91a97dff-eebc-4a86-9124-403b76671f37")
 		)
 		(instances
-			(project "SolidStateRelayBoard"
+			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U6")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7353,7 +7556,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 187.96 44.45 0)
 			(effects
 				(font
@@ -7405,7 +7608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bb9e886-ebc4-48c7-9d1a-4a0f8127fa72")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 134.62 110.49 0)
 			(effects
 				(font
@@ -7455,7 +7658,159 @@
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 170.18 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dd1573f-c9ea-41fb-af29-3277915f061e")
+		(property "Reference" "#PWR07"
+			(at 170.18 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA24"
+			(at 170.18 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "560bdb59-fa82-4bf7-98a8-2e5d5df59205")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 77.47 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e058f36-8004-40f0-88e9-8a321daba76a")
+		(property "Reference" "U2"
+			(at 76.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 76.2 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 74.93 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 77.47 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "a8c38d21-7165-4ac5-bb07-f2f134df4525")
+		)
+		(pin "8"
+			(uuid "989eb58d-1e34-4841-a556-db4624da0ea2")
+		)
+		(pin "2"
+			(uuid "88e81cff-958d-4cac-b4bc-35f0184d35bc")
+		)
+		(pin "3"
+			(uuid "8e9bee44-1907-42da-ab04-7c6fac0ec57a")
+		)
+		(pin "6"
+			(uuid "5fc084f4-96ca-43b2-af1d-d13abaeb5991")
+		)
+		(pin "4"
+			(uuid "7f2466a3-8868-4072-a567-b0606686faca")
+		)
+		(pin "1"
+			(uuid "ffcbb463-3e8e-41f0-bee2-81f38ff5a1e0")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7487,7 +7842,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-10P_1x10_P2.54mm_Horizontal"
 			(at 109.22 143.51 0)
 			(effects
 				(font
@@ -7554,99 +7909,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x10")
-		(at 267.97 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a1d14477-8c07-4e7f-9397-7206cac11221")
-		(property "Reference" "J5"
-			(at 266.954 21.336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolenoidValveOutput6_10"
-			(at 258.826 24.384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "df7fe0bf-92f4-4bbf-809b-be8c1d23882a")
-		)
-		(pin "4"
-			(uuid "2c77aeca-126e-474c-aa48-77a393585a96")
-		)
-		(pin "9"
-			(uuid "0d9c9e9d-cbb3-4e8a-9a08-005a1f1df54d")
-		)
-		(pin "10"
-			(uuid "49123fde-de88-4837-9f44-6c838a4b9cfb")
-		)
-		(pin "1"
-			(uuid "dd8c12f1-cf25-43f5-be02-3b4077aed0cc")
-		)
-		(pin "2"
-			(uuid "632c8557-bebf-46ca-bbde-12a7612d4ee2")
-		)
-		(pin "3"
-			(uuid "750b527e-71e2-4073-b02b-474d38b9e6c7")
-		)
-		(pin "6"
-			(uuid "6d62b47c-0865-45a8-9417-af8797fda7a2")
-		)
-		(pin "7"
-			(uuid "3d61fbc9-25b5-4092-83b4-95ab206e4f71")
-		)
-		(pin "8"
-			(uuid "ec55dbe4-7d72-48e5-8a73-cd3610a4a9ca")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Varistor")
 		(at 91.44 97.79 0)
 		(unit 1)
@@ -7674,7 +7936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 89.662 97.79 90)
 			(effects
 				(font
@@ -7762,6 +8024,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 77.47 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa921494-de92-41a0-87de-d678ccb6b078")
+		(property "Reference" "U5"
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 59.69 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 74.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 77.47 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "4df55666-515e-45c0-ba30-03f15e38fdd7")
+		)
+		(pin "8"
+			(uuid "20831dbf-1e1c-4d1e-8294-e564f37c8f9b")
+		)
+		(pin "2"
+			(uuid "c0a2dbb1-f8a1-499e-b4b8-513d4678f194")
+		)
+		(pin "3"
+			(uuid "14c2c4f1-d67d-414e-9f42-e74073546c1f")
+		)
+		(pin "6"
+			(uuid "5403e27e-f7dc-4e95-b398-61a494cababf")
+		)
+		(pin "4"
+			(uuid "b5deace3-cdc3-4747-92fc-6a1c4f0ee708")
+		)
+		(pin "1"
+			(uuid "c0e2664b-b3c4-4472-b934-0fbc4cd25a8f")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Varistor")
 		(at 91.44 48.26 0)
 		(unit 1)
@@ -7789,7 +8137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 89.662 48.26 90)
 			(effects
 				(font
@@ -7877,33 +8225,101 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 77.47 46.99 0)
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 161.29 133.35 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ade79645-5e6c-480a-a06f-40be536621dc")
+		(property "Reference" "J4"
+			(at 161.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24VAC"
+			(at 161.29 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal"
+			(at 161.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 161.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a21b7c6-67ba-4122-b56e-4875f6d0af68")
+		)
+		(pin "2"
+			(uuid "f3246db4-dcbb-4971-a516-fa43a4705c1b")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 224.79 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b888e73c-ef93-4fdb-81fb-e06e36856a32")
-		(property "Reference" "U2"
-			(at 76.2 38.1 0)
+		(uuid "b4cf61fe-d800-4414-8125-63b950346941")
+		(property "Reference" "U6"
+			(at 223.52 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AQH3223A"
-			(at 76.2 40.64 0)
+		(property "Value" "AQH3223"
+			(at 223.52 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 69.85 52.07 0)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 207.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7914,7 +8330,7 @@
 			)
 		)
 		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 74.93 46.99 0)
+			(at 222.25 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7923,8 +8339,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 77.47 46.99 0)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 224.79 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,63 +8348,64 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "6ca634e3-85a0-4616-ba24-d931527f471e")
-		)
-		(pin "1"
-			(uuid "d6f1e0ba-2f21-43c5-ae6d-b984bb604ae1")
-		)
-		(pin "3"
-			(uuid "b4926764-7c8d-4a3f-8abe-5d6cb2cfb022")
-		)
-		(pin "4"
-			(uuid "fbf49916-8007-40cf-b814-a1553694c1b1")
-		)
-		(pin "6"
-			(uuid "dc70cacd-861a-4524-8ac6-c3519ffa9ea8")
+		(pin "5"
+			(uuid "c3767544-a21d-4726-be0f-1a42b576a740")
 		)
 		(pin "8"
-			(uuid "803532d6-611a-4c8f-ba4a-cd9283bf20a4")
+			(uuid "e340c168-5ee3-408b-bba1-445e043a3265")
 		)
-		(pin "5"
-			(uuid "f3d06ecc-1992-4b6a-9eaf-b1cf4ecafc68")
+		(pin "2"
+			(uuid "eeca235c-1d8d-4e4c-9526-2ec8afa2cd3e")
+		)
+		(pin "3"
+			(uuid "2a2d562d-9180-4f56-be34-b287cecc2c5b")
+		)
+		(pin "6"
+			(uuid "61d37a2c-d359-40b7-ad58-c12bebdfc708")
+		)
+		(pin "4"
+			(uuid "c7f938cc-fab7-41e7-92cd-6b5b132d08bd")
+		)
+		(pin "1"
+			(uuid "d2bdac1e-ab7e-4b9e-a4eb-131c1814e860")
 		)
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U2")
+					(reference "U6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:Transformer_1P_1S")
-		(at 36.83 152.4 0)
+		(lib_id "Device:Fuse_Small")
+		(at 69.85 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c108c430-9a89-466f-8855-cfc60031e799")
-		(property "Reference" "T1"
-			(at 36.8427 142.24 0)
+		(fields_autoplaced yes)
+		(uuid "baf7b847-a908-4bf7-baee-ff3aa37aa70d")
+		(property "Reference" "F2"
+			(at 69.85 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "48VA Transformer 240VAC/24VAC"
-			(at 38.354 144.526 0)
+		(property "Value" "3A"
+			(at 69.85 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 36.83 152.4 0)
+		(property "Footprint" "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open"
+			(at 69.85 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7997,7 +8414,160 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 152.4 0)
+			(at 69.85 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 69.85 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bb10e60-3308-4792-988f-129873efcc71")
+		)
+		(pin "1"
+			(uuid "349c1277-cac6-4e25-a3f9-c218b443782f")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 224.79 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bece4db4-0e13-4413-9c8f-2b8b7d7c37fc")
+		(property "Reference" "U7"
+			(at 223.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQH3223"
+			(at 223.52 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 207.01 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
+			(at 222.25 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 224.79 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "4c022f5a-3fbb-434b-9afd-8ef660478354")
+		)
+		(pin "8"
+			(uuid "ae57bd8f-4ce6-46a2-acef-cad56208f087")
+		)
+		(pin "2"
+			(uuid "63c602de-d2cf-4efa-82c7-91d95dd442ad")
+		)
+		(pin "3"
+			(uuid "670dcc19-4c5b-44cd-8be4-3f0b46108445")
+		)
+		(pin "6"
+			(uuid "458a88d5-7b1f-4c38-a272-048ae23a1d0c")
+		)
+		(pin "4"
+			(uuid "b4eebbc1-69d3-4327-a71b-230cd4166b5f")
+		)
+		(pin "1"
+			(uuid "abfdf890-90d2-4def-9fcc-8d335978bc09")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Transformer_1P_1S")
+		(at 41.91 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "c108c430-9a89-466f-8855-cfc60031e799")
+		(property "Reference" "T1"
+			(at 41.91 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "48VA Transformer 240VAC/24VAC"
+			(at 41.91 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8006,7 +8576,7 @@
 			)
 		)
 		(property "Description" "Transformer, single primary, single secondary"
-			(at 36.83 152.4 0)
+			(at 41.91 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8030,74 +8600,6 @@
 			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
 					(reference "T1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse_Small")
-		(at 59.69 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c10ed54e-1b29-4a88-aaba-46739f960940")
-		(property "Reference" "F1"
-			(at 59.69 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3A"
-			(at 59.69 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse, small symbol"
-			(at 59.69 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e3254f42-5a21-4711-a3ba-33d561730467")
-		)
-		(pin "1"
-			(uuid "662c6083-18fe-4307-a936-2fef689c57f3")
-		)
-		(instances
-			(project ""
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -8131,7 +8633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 89.662 31.75 90)
 			(effects
 				(font
@@ -8219,92 +8721,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 224.79 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c3ecc515-c3a6-4f2d-b809-9c2ec0f1e675")
-		(property "Reference" "U10"
-			(at 223.52 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AQH3223A"
-			(at 223.52 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 217.17 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 222.25 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 224.79 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "006e557f-6621-4671-9fca-34b449dde703")
-		)
-		(pin "1"
-			(uuid "37252aae-7bea-4761-9fb7-19ea859f303f")
-		)
-		(pin "3"
-			(uuid "aecb2d6a-2f96-4f26-9d1b-ede780c8aa33")
-		)
-		(pin "4"
-			(uuid "df9f0e15-54a4-44e7-808b-3eeadea21500")
-		)
-		(pin "6"
-			(uuid "32737562-dad2-4e9c-b979-0f5f3b8654dc")
-		)
-		(pin "8"
-			(uuid "e0663d30-3258-4d5a-90c6-65e4867a8d9f")
-		)
-		(pin "5"
-			(uuid "68075925-9935-4c39-8bd7-fb93e53fbba9")
-		)
-		(instances
-			(project "SolidStateRelayBoard"
-				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VAC")
 		(at 19.05 138.43 0)
 		(unit 1)
@@ -8314,7 +8730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5d077a8-0c0e-4064-bccf-3f405aa104c4")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR01"
 			(at 19.05 140.97 0)
 			(effects
 				(font
@@ -8364,7 +8780,101 @@
 		(instances
 			(project ""
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR04")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x10")
+		(at 267.97 40.64 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5ec1fd9-9786-44d7-ae77-c8c77e0ba65e")
+		(property "Reference" "J6"
+			(at 266.7 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolenoidValveOutput6_10"
+			(at 255.778 24.892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x10_P3.50mm_Horizontal"
+			(at 267.97 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 267.97 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "18da7708-eb6b-4459-995f-d4e65336998c")
+		)
+		(pin "4"
+			(uuid "56455017-7a83-4981-b513-4b3c644ef96c")
+		)
+		(pin "9"
+			(uuid "62e143db-b213-4ae9-ac3f-3c44de3b2a14")
+		)
+		(pin "10"
+			(uuid "c53e070e-88f9-4384-a5da-718dc325793f")
+		)
+		(pin "1"
+			(uuid "e4fa70e3-7e4a-41a0-ace9-068663a468d4")
+		)
+		(pin "2"
+			(uuid "2dd3af9a-3595-47ae-b4c8-73a1356cb904")
+		)
+		(pin "3"
+			(uuid "bcc9d272-ce04-4ca7-818a-70d867149fe1")
+		)
+		(pin "6"
+			(uuid "5c8436d4-aaef-4a0e-8e8a-e6663a85373d")
+		)
+		(pin "7"
+			(uuid "e6fa173e-32ab-4df2-9ad0-2e0d3fe69e49")
+		)
+		(pin "8"
+			(uuid "8c8cffa8-fb05-4f9c-84b2-5efa54a82d5f")
+		)
+		(instances
+			(project "SolidStateRelayBoard"
+				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8398,7 +8908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 89.662 81.28 90)
 			(effects
 				(font
@@ -8511,7 +9021,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 187.96 60.96 0)
 			(effects
 				(font
@@ -8554,33 +9064,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay_SolidState:AQH3223A")
-		(at 77.47 96.52 0)
+		(lib_id "Relay_SolidState:AQH3223")
+		(at 224.79 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e65944f0-c512-4a67-b65e-a272f100433d")
-		(property "Reference" "U5"
-			(at 76.2 87.63 0)
+		(uuid "eb3e4faa-8686-4192-aa74-01cdf1c3161d")
+		(property "Reference" "U10"
+			(at 223.52 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AQH3223A"
-			(at 76.2 90.17 0)
+		(property "Value" "AQH3223"
+			(at 223.52 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSO-7-8_6.4x9.78mm_P2.54mm"
-			(at 69.85 101.6 0)
+		(property "Footprint" "Package_DIP:DIP-8-N7_W7.62mm"
+			(at 207.01 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8591,7 +9101,7 @@
 			)
 		)
 		(property "Datasheet" "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/relay/solid-state/catalog/semi_eng_aqh.pdf"
-			(at 74.93 96.52 0)
+			(at 222.25 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,8 +9110,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, SOIC-7"
-			(at 77.47 96.52 0)
+		(property "Description" "Random Phase Opto-Triac, Vdrm 600V, Ift 10mA, IT 1.2A, DIP-7"
+			(at 224.79 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8609,31 +9119,31 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "921cc19c-4f5a-4316-aadf-5946a02efa12")
-		)
-		(pin "1"
-			(uuid "5cd0f0c3-15d6-4844-8199-61a6bb9ef808")
-		)
-		(pin "3"
-			(uuid "cdfe2d04-3e2e-477a-b48e-0b9c1ad40f43")
-		)
-		(pin "4"
-			(uuid "efdaa888-9fed-4f01-8168-a30c0baed7d3")
-		)
-		(pin "6"
-			(uuid "3e614a07-6e45-460e-806f-d1f2be11dfa2")
+		(pin "5"
+			(uuid "9943d44d-b273-4388-9db4-5571cc571f15")
 		)
 		(pin "8"
-			(uuid "f24fa5dc-c78b-45a3-a909-9a23b6087c3f")
+			(uuid "10d222f3-d025-4283-bfad-04c149adbffe")
 		)
-		(pin "5"
-			(uuid "b2154087-c310-4c17-9365-18273f5b4932")
+		(pin "2"
+			(uuid "157dc04e-3f16-4121-bc98-9f69a3054711")
+		)
+		(pin "3"
+			(uuid "40ca7567-b6d3-4a44-a9f9-f89a969be1c3")
+		)
+		(pin "6"
+			(uuid "af9e72a1-58b6-4587-92ec-fccc4cc25e08")
+		)
+		(pin "4"
+			(uuid "1861364b-99bf-42ab-98a0-5eb7515ba62f")
+		)
+		(pin "1"
+			(uuid "f20a34a6-2de8-44fd-b4a6-2cd77d5cf159")
 		)
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "U5")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -8667,7 +9177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D12mm_W3.9mm_P7.5mm"
 			(at 238.252 48.26 90)
 			(effects
 				(font
@@ -8764,7 +9274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff305b1f-89f6-460f-a3a0-12e6914ec1f3")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 203.2 110.49 0)
 			(effects
 				(font
@@ -8814,7 +9324,7 @@
 		(instances
 			(project "SolidStateRelayBoard"
 				(path "/91dd72f1-863d-4001-b73d-49fe8f55bc30"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
